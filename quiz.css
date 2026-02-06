@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 🌈 STRONG BACKGROUND */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  min-height: 100vh;
+}
+
+/* Center content */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 🎴 QUIZ CARD */
+.card {
+  background: #ffffff;
+  width: 420px;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  animation: pop 0.4s ease-in-out;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1, h2 {
+  text-align: center;
+  color: #2d3748;
+}
+
+/* 🎯 OPTIONS */
+.option {
+  background: #f7fafc;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.option:hover {
+  background: #bee3f8;
+}
+
+/* 🎮 BUTTON */
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ✅ ❌ RESULT */
+#result {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 12px;
+  font-weight: bold;
+}
